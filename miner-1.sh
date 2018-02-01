@@ -16,12 +16,12 @@ fi
 # Obtem o nome do usuario
 if [ -z "${usuario-}" ]; then
   echo
-  read -p "[read] Entre com o nome do usu�rio: " usuario
+  read -p "[read] Entre com o nome do usuário: " usuario
 fi
 # Obtem a senha do usuurio
 if [ -z "${senha-}" ]; then
   echo
-  read -p "[read] Entre com a senha do usu�rio: " senha
+  read -p "[read] Entre com a senha do usuário: " senha
 fi
 # [ JDK Install ] 
 sudo apt-get update
