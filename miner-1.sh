@@ -127,7 +127,7 @@ retorno="${opton}"
 
 menu
 [[ $retorno = "0" ]] && echo "Saindo"
-[[ $retorno = "1" ]] && fun_2
-[[ $retorno = "2" ]] && fun_1
+[[ $retorno = "1" ]] && fun_1
+[[ $retorno = "2" ]] && fun_2
 unset retorno
 exit
