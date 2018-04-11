@@ -24,12 +24,12 @@ if [ -z "${senha-}" ]; then
   read -p "[read] Entre com a senha do usuário: " senha
 fi
 # [ JDK Install ] 
-sudo apt-get update
-sudo apt-get install default-jre
-sudo apt-get install default-jdk
+sudo apt-get update -y
+sudo apt-get install default-jre -y
+sudo apt-get install default-jdk -y
 # [ Extras ]
-sudo apt-get install nodejs
-sudo apt-get install maven
+sudo apt-get install nodejs -y
+sudo apt-get install maven -y
 # [ Stratum Proxy ]
 wget https://github.com/darkstilo22/stratum-proxy/archive/v0.8.1.1-malthraxcrypto.tar.gz -O v0.8.1.1-malthraxcrypto.tar.gz
 tar -xzvf v0.8.1.1-malthraxcrypto.tar.gz
